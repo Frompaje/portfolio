@@ -1,0 +1,966 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.display {
+    display: none;
+}
+
+body {
+    background: url(background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* divAPP */
+.app {
+    max-width: 1440px;
+    margin-inline: auto;
+    font-family: "Sora", sans-serif;
+    box-shadow: 0px 0px 20px rgba(3, 3, 3, 0.75);
+}
+
+/* header */
+header {
+    padding: 20px;
+    background: white;
+    transition: 0.3s;
+}
+
+header.sticky {
+
+    min-width: 1440px;
+    position: fixed;
+    background: transparent;
+    backdrop-filter: blur(10px);
+
+    color: white;
+    z-index: 1000;
+}
+
+nav.sticky a {
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+span {
+    font-family: "Sora", sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.header-logo {
+    font-size: 25px;
+}
+
+.header-logo span {
+    color: #0fc2c0;
+}
+
+.header-navgation,
+.header-redes {
+    display: flex;
+    gap: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header-redes {
+    margin-right: 20px;
+}
+
+.header-navgation {
+    margin-inline: auto;
+}
+
+.header-navgation a {
+    color: black;
+    transition: all 0.2s;
+}
+
+.header-redes a {
+    color: black;
+}
+
+.header-redes span {
+    margin-left: 10px;
+}
+
+.header-navgation a:hover {
+    color: #0fc2c0;
+}
+
+.header-redes span:hover {
+    color: #0fc2c0;
+}
+
+/* main */
+/* about-me */
+.main-apresentação {
+    display: flex;
+}
+
+.main-conteudo {
+    background-color: #008f8c;
+    width: 100%;
+    color: white;
+}
+
+.main-conteudo h1 {
+    margin-top: 260px;
+    font-size: 100px;
+    margin-left: 150px;
+}
+
+.main-conteudo h2,
+.main-conteudo p {
+    margin-left: 155px;
+}
+
+.main-conteudo p {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 50vw;
+    height: 80vh;
+}
+
+.main-about {
+    margin-top: 20px;
+}
+
+.main-about span {
+    font-weight: 700;
+}
+
+.main-about a {
+    margin-left: 155px;
+    padding: 10px 20px;
+    background: white;
+    color: #333333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-about a:hover {
+    padding: 12px 23px;
+    font-size: 19px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+/* skills */
+.main-skills {
+    background: #015958;
+    color: white;
+    height: 1200px;
+}
+
+.main-skills h2 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+}
+
+.container hr {
+    margin-inline: auto;
+    width: 50%;
+}
+
+.html {
+    margin-top: 50px;
+
+    width: 450px;
+    height: 220px;
+    background: #023535;
+    text-align: center;
+    border-radius: 20px;
+
+    transition: 0.3s;
+    box-shadow: 0px 10px 10px rgba(12, 12, 12, 0.75);
+}
+
+.html p {
+    margin-inline: 20px;
+    font-size: 13px;
+}
+
+.html i {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.box-skills {
+    display: flex;
+    justify-content: center;
+    margin-inline: 20px;
+    gap: 20px;
+}
+
+.html:hover {
+    border: 1px solid white;
+    transform: scale(1.05);
+}
+
+.ph-file-html,
+.html span {
+    color: rgb(223, 84, 84);
+}
+
+.ph-file-css,
+.css span {
+    color: rgb(70, 142, 201);
+}
+
+.ph-file-js,
+.javascript span {
+    color: rgb(201, 201, 87);
+}
+
+.ri-reactjs-fill,
+.react span {
+    color: rgb(51, 150, 207);
+}
+
+.ph-figma-logo,
+.figma span {
+    color: rgb(224, 113, 73);
+}
+
+.ph-file-ts,
+.typescript span {
+    color: rgb(66, 134, 211);
+}
+
+/* projetos */
+.main-projetos {
+    height: 70vh;
+    background: #008f8c;
+    color: white;
+}
+
+.main-projetos h2 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.main-projetos hr {
+    margin-inline: auto;
+    width: 50%;
+}
+
+.projetos-box {
+    background: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0px 10px 7px rgba(12, 12, 12, 0.75);
+    margin-inline: auto;
+    margin-top: 50px;
+    transition: 0.3s;
+    width: 445px;
+}
+
+.conteudo-project {
+    display: flex;
+    gap: 20px;
+}
+
+.projeto3 img,
+.projeto1 img,
+.projeto2 img {
+    width: 440px;
+    margin-top: 2px;
+    height: 200px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.projeto3 img:hover,
+.projeto1 img:hover,
+.projeto2 img:hover {
+    transform: scale(1.05);
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.content-tools p {
+    color: black;
+    font-weight: 700;
+}
+
+.tools i {
+    color: #068d8b;
+}
+
+/* media */
+@media (max-width: 1440px) {
+    .app {
+        max-width: 1204px;
+    }
+
+    header.sticky {
+        min-width: 1204px;
+    }
+
+    .main-projetos {
+        width: auto;
+        height: auto;
+    }
+
+    .conteudo-project {
+        display: block;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1206px) {
+    .app {
+        max-width: 1100px;
+    }
+
+    header.sticky {
+        min-width: 1100px;
+    }
+}
+
+@media (max-width: 1102px) {
+    .app {
+        max-width: 1000px;
+    }
+
+    header.sticky {
+        min-width: 1000px;
+    }
+
+    .header-logo h2 {
+        font-size: 30px;
+    }
+
+    .header-navgation ul li a {
+        font-size: 15px;
+    }
+
+    .header-redes ul li a {
+        font-size: 15px;
+    }
+
+    .react p {
+        font-size: 12.2px;
+    }
+}
+
+@media (max-width: 1006px) {
+    .app {
+        max-width: 900px;
+    }
+
+    header.sticky {
+        min-width: 900px;
+    }
+
+    .header-logo h2 {
+        font-size: 20px;
+    }
+
+    .header-navgation ul li a {
+        font-size: 15px;
+    }
+
+    .header-redes ul li a {
+        font-size: 15px;
+    }
+
+    .react p {
+        font-size: 12.2px;
+    }
+
+    .main-conteudo h1,
+    .main-conteudo h2,
+    .main-conteudo p {
+        margin-left: 0;
+        padding-left: 19px;
+    }
+
+    .main-about p {
+        font-size: 15px;
+    }
+
+    .main-about a {
+        margin-left: 0;
+    }
+
+    .btn {
+        margin-left: 19px;
+    }
+
+    .html i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .html p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 900px) {
+
+
+    header.sticky {
+        padding: 20px;
+    }
+
+    .header-logo h2 {
+        font-size: 30px;
+
+    }
+
+
+
+    .hr1.blur,
+    .hr2.blur,
+    .hr3.blur {
+        background: white;
+        border: 1px solid white;
+    }
+
+    .hr1,
+    .hr2,
+    .hr3 {
+        width: 40px;
+
+        background: black;
+        border: 2px solid black;
+        margin-bottom: 5px;
+        transition: 0.3s;
+        position: absolute;
+        top: 47px;
+        right: 50px;
+    }
+
+    .hr1 {
+        top: 35px;
+    }
+
+    .hr3 {
+        top: 25px;
+    }
+
+    .hr2.menu {
+        display: none;
+    }
+
+    .hr1.menu {
+        position: absolute;
+        transform: rotate(140deg);
+        top: 30px;
+
+    }
+
+    .hr3.menu {
+        top: 30px;
+        transform: rotate(-140deg);
+    }
+
+    .hr1 {
+        height: 3px;
+    }
+
+    .hr2 {
+        height: 3px;
+    }
+
+    .hr3 {
+        height: 3px;
+    }
+
+
+    .header-navgation {
+        transform: scale(0);
+        position: absolute;
+        flex-direction: column;
+        gap: 9px;
+        top: 10%;
+        right: 1%;
+        transition: all .4s ease-in-out
+    }
+
+    .header-redes {
+        position: absolute;
+        transform: scale(0);
+        flex-direction: column;
+
+        gap: 9px;
+        top: 10%;
+        right: -1.2%;
+        transition: all .4s ease-in-out;
+
+
+    }
+
+    .header-navgation ul li,
+    .header-redes ul li {
+
+        background: white;
+        width: 28vw;
+        border-radius: 9px;
+        box-shadow: 1px 10px 15px rgba(12, 12, 12, 0.75);
+
+    }
+
+    .header-navgation a,
+    .header-redes a {
+        position: relative;
+        left: 5px;
+
+    }
+
+    .header-redes.menu a {
+        left: -5px;
+
+    }
+
+    .header-navgation.menu {
+        transform: scale(1);
+        transition: .6s ease-in-out;
+        right: 2%;
+    }
+
+    .header-redes.menu {
+
+        transform: scale(1);
+        top: 27%;
+        right: 0%;
+        transition: .6s ease-in-out;
+    }
+
+    .header-redes.sticky {
+        color: black;
+    }
+
+    .header-redes.menu a {
+        margin-left: 10px;
+    }
+
+    .header-redes span,
+    .header-redes i {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .display {
+        display: block;
+    }
+
+    .header-navgation ul li a {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+    }
+
+    .header-navgation.menu ul li,
+    .header-redes.menu ul li {
+        background: white;
+        border-radius: 9px;
+        box-shadow: 1px 10px 15px rgba(12, 12, 12, 0.75);
+
+    }
+
+    nav.sticky i,
+    nav.sticky a {
+        color: rgb(0, 0, 0);
+    }
+
+    nav.sticky .header-navgation.menu {
+        position: absolute;
+        top: 85px;
+
+    }
+
+    nav.sticky .header-redes.menu {
+        position: absolute;
+        top: 227px;
+
+    }
+
+    nav.sticky .box-sandwich {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    .main-apresentação img {
+
+        width: 250px;
+        height: 250px;
+        border-radius: 100px 100px 200px 200px;
+        box-shadow: 1px 1px 15px rgba(12, 12, 12, 0.75);
+        position: absolute;
+        left: 34%;
+        bottom: 490px;
+    }
+
+    .main-conteudo h1 {
+        margin-top: 250px;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 854px) {
+
+
+    header.sticky {
+        min-width: 854px;
+    }
+
+    .sticky {
+        margin-right: 130px;
+    }
+
+    nav.sticky .box-sandwich {
+        right: 7px;
+
+    }
+   
+.header-navgation.menu {
+right:2.5%;
+    }
+    .slider-wrapper {
+        max-width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        overflow: scroll;
+        scroll-behavior: smooth;
+    }
+
+    .slider-wrapper div {
+        flex: 1 0 80%;
+
+        scroll-snap-align: start;
+        object-fit: cover;
+    }
+
+    .slider-wrapper div:first-child {
+        margin-left: 800px;
+    }
+
+
+
+}
+
+@media (max-width: 828px) {
+
+
+
+    header.sticky {
+        min-width: 100%;
+    }
+
+    nav .header-navgation.menu a {
+        font-size: 20px;
+
+    }
+
+
+    nav.sticky .header-redes.menu,
+    .header-redes.menu i,
+    .header-redes.menu span {
+        font-size: 20px;
+
+    }
+
+    .header-redes.menu,
+    nav.sticky .header-redes.menu {
+        top: 185px;
+    }
+
+
+
+}
+
+@media(max-width:718px) {
+    .main-apresentação img {
+        left: 33%;
+    }
+
+    .header-navgation.menu,
+    .header-redes.menu {
+        z-index: 1000;
+    }
+}
+
+@media(max-width:627px) {
+    .main-apresentação img {
+        left: 30%;
+    }
+
+    .header-redes.menu span {
+        margin: 0;
+    }
+}
+
+
+
+@media(max-width:500px) {
+    .main-apresentação img {
+        left: 27%;
+    }
+   
+    }
+
+@media(max-width:488px) {
+    .main-apresentação img {
+        left: 23%;
+        bottom: 55%;
+    }
+
+    .box-sandwich {
+
+        padding-left: 40px;
+
+        padding-right: 20px;
+
+    }
+
+
+    nav.sticky .header-navgation,
+    .header-navgation.menu {
+
+        left: 67%;
+    }
+
+    nav.sticky .header-redes.menu,
+    .header-redes.menu {
+        left: 67%;
+    }
+
+    .projetos-box {
+        width: 340px;
+    }
+
+    .projetos-box img {
+        width: 335px;
+    }
+
+
+}
+
+@media(max-width:488px) {
+    .main-conteudo h1 {
+        font-size: 30px;
+
+    }
+
+    .main-conteudo {
+        padding-top: 80px;
+    }
+
+    .main-apresentação img {
+        left: 20%;
+        bottom: 490px;
+    }
+
+    .main-apresentação {
+        height: 90vh;
+
+    }
+
+    .header-redes.menu span,
+    .header-redes.menu i,
+    .header-navgation.menu ul li a {
+        font-size: 15px;
+    }
+
+    .header-redes.menu {
+        top: 20.7%;
+    }
+
+    nav.sticky .header-redes.menu {
+        top: 224%;
+    }
+
+    .slider-wrapper div:first-child {
+        margin-left: 700px;
+    }
+}
+
+@media(max-width:389px) {
+    .slider-wrapper div:first-child {
+        margin-left: 650px;
+    }
+}
+
+@media(max-width:375px) {
+    .main-apresentação img {
+        left: 19%;
+    }
+
+    .container h2 {
+        font-size: 30px;
+
+    }
+
+    .header-logo h2 {
+        font-size: 30px;
+
+    }
+
+    .slider-wrapper div:first-child {
+        margin-left: 650px;
+    }
+}
+
+@media(max-width:341px) {
+    .main-apresentação img {
+        left: 17%;
+    }
+
+    .container h2 {
+        font-size: 30px;
+
+    }
+
+    .header-logo h2 {
+        font-size: 25px;
+
+    }
+
+    .box-sandwich hr {
+        width: 40px;
+        border: 2px solid black;
+    }
+
+  
+
+
+    .hr1.menu {
+        position: absolute;
+        transform: rotate(140deg);
+        top: 35px;
+
+    }
+
+    .hr3.menu {
+        top: 35px;
+        transform: rotate(-140deg);
+    }
+
+    .projetos-box {
+        width: 320px;
+    }
+
+    .projetos-box img {
+        width: 315px;
+    }
+
+}
+@media(max-width:335px) {
+    .main-apresentação img {
+        left: 14%;
+    }
+}
+
+@media(max-width:320px) {
+    .main-apresentação img {
+        left: 11%;
+    }
+    .header-logo h2{
+        font-size: 22.5px;
+    }
+
+    .main-conteudo h1,
+    .main-conteudo h2,
+    .main-conteudo p {
+
+        padding-left: 10px;
+    }
+    .header-redes.menu span,
+    .header-redes.menu i,
+    .header-navgation.menu ul li a {
+        font-size: 12px;
+    }
+    .slider-wrapper div:first-child {
+        margin-left: 500px;
+    }
+   
+    nav.sticky .header-redes.menu {
+        top: 185px;
+    }
+    nav.sticky .hr1 {
+        top: 30px;
+       
+    }
+
+    nav.sticky .hr2 {
+        top: 20px;
+      
+    }
+
+    nav.sticky .hr3 {
+        top: 25px;
+        
+
+    }
+
+
+    nav.sticky .hr1.menu {
+        position: absolute;
+     
+        top: 25px;
+       
+    }
+
+    nav.sticky .hr3.menu {
+        top: 25px;
+    
+        
+    }
+    .projetos-box {
+        width: 300px;
+    }
+
+    .projetos-box img {
+        width: 295px;
+    }
+
+}
